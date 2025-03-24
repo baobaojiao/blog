@@ -1,0 +1,398 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  min-height: 80vh;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  video {
+    width: 90%;
+    height: 90%;
+  }
+}
+
+
+/* 关于页 标签【绿色】Tooltip组件样式 */
+.findGreen .ivu-tooltip-inner {
+  padding: 0 !important;
+  white-space: normal;
+}
+
+/* 关于页 标签【绿色】Tooltip组件样式 end */
+
+
+/* -------------公共样式--------------------- */
+
+.mRight-10 {
+  margin-right: 10px;
+}
+
+
+.mBottom-20 {
+  margin-bottom: 20px;
+}
+
+/* 方块背景 */
+.bgDiamonds {
+  --color: #e1e1e1;
+  background-image: linear-gradient(0deg,
+  transparent 24%,
+  var(--color) 25%,
+  var(--color) 26%,
+  transparent 27%,
+  transparent 74%,
+  var(--color) 75%,
+  var(--color) 76%,
+  transparent 77%,
+  transparent),
+  linear-gradient(90deg,
+          transparent 24%,
+          var(--color) 25%,
+          var(--color) 26%,
+          transparent 27%,
+          transparent 74%,
+          var(--color) 75%,
+          var(--color) 76%,
+          transparent 77%,
+          transparent);
+  background-size: 50px 50px;
+}
+
+/* -------------公共样式end--------------------- */
+
+
+
+
+/* -----------------评论的样式---------------- */
+
+.commentListYL img,
+#commentYl img {
+  vertical-align: bottom;
+  border: none !important;
+  border-radius: 0 !important;
+  max-width: 200px !important;
+
+}
+
+.commentListYL h1,
+.commentListYL h2,
+.commentListYL h3,
+.commentListYL h4,
+.commentListYL h5,
+.commentListYL h6,
+#commentYl h1,
+#commentYl h2,
+#commentYl h3,
+#commentYl h4,
+#commentYl h5,
+#commentYl h6 {
+  margin: 0 !important;
+}
+
+.commentListYL .md-editor-preview-wrapper {
+  padding: 0 !important
+}
+
+/* -----------------评论的样式end---------------- */
+
+
+
+/* -----------------最近组件 评论的样式---------------- */
+
+.recencyMd .md-editor-preview-wrapper {
+  padding: 0
+}
+
+.recencyMd .cyanosis-theme p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.recencyMd .md-editor-preview {
+  font-size: 14px;
+}
+
+/* -----------------最近组件 评论的样式end---------------- */
+
+/* -----------------说说页评论-----------------------*/
+.momentsContent {
+  background-color: transparent !important;
+}
+
+.momentsContent .md-editor-preview {
+  font-size: 14px;
+  color: #808080;
+}
+
+.momentsContent p {
+  margin: 0 !important;
+}
+
+
+.momentsContent .md-editor-preview-wrapper {
+  padding: 0;
+}
+
+.momentsContent .cyanosis-theme p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.momentsContent img {
+  vertical-align: middle;
+  border: none !important;
+  border-radius: 0 !important;
+  max-width: 200px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* -----------------说说页评论end-----------------------*/
+
+
+/* -----------------文章、说说中的iframe嵌入大小(一般嵌入b站视频)---------------- */
+.moment_content iframe {
+  width: 550px;
+  height: 300px;
+}
+
+.essay_content iframe {
+  width: 90%;
+  height: 450px;
+}
+
+@media (max-width: 800px) {
+  .moment_content iframe {
+    width: 100%;
+  }
+
+  .essay_content iframe {
+    height: 250px;
+  }
+}
+
+@media (max-width: 500px) {
+  .moment_content iframe {
+    height: 200px;
+  }
+}
+
+/* -----------------文章、说说中的iframe嵌入大小end---------------- */
+
+
+
+
+
+/* -----------------滚动条整体-----------------------*/
+body::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  border-radius: 10px;
+}
+
+/* 滑块 */
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #425aef;
+  background-image: -webkit-linear-gradient(45deg,
+      rgba(255, 255, 255, 0.2) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(255, 255, 255, 0.2) 75%,
+      transparent 75%,
+      transparent);
+}
+
+/* 轨道 */
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+/* -----------------滚动条整体end-----------------------*/
+
+
+#loadingGif {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  line-height: 100vh;
+}
+
+/* 页面选择颜色 */
+::selection {
+  background-color: #e2e2e2;
+  color: #0095da;
+}
+
+/*加载中icon样式*/
+.demo-spin-icon-load {
+  animation: ani-demo-spin 1s linear infinite;
+}
+
+/* 询问框中的问号图标 */
+.ivu-icon-ios-help-circle {
+  opacity: 0;
+}
+
+@keyframes ani-demo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 分页样式 */
+.ivu-page li {
+  min-width: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.ivu-page a {
+  font-size: 18px;
+}
+
+/* 阿里矢量图 */
+.icon {
+  width: 30px;
+  height: 30px;
+  vertical-align: -0.3em;
+}
+
+.color_white {
+  color: #fff !important;
+}
+
+
+
+/* ------加载动画,用于图片加载时------- */
+
+.imgLoading {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #3cefff;
+  overflow: hidden;
+  animation: imgSpin 3s ease infinite;
+}
+
+.imgLoading::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 20px;
+  height: 20px;
+  background-color: hsla(185, 100%, 62%, 0.75);
+  transform-origin: center bottom;
+  transform: scaleY(1);
+  animation: imgFill 3s linear infinite;
+}
+
+@keyframes imgSpin {
+
+  50%,
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes imgFill {
+
+  25%,
+  50% {
+    transform: scaleY(0);
+  }
+
+  100% {
+    transform: scaleY(1);
+
+  }
+}
+
+/* ------加载时动画,用于图片------- */
+
+
+/* 说说内容 */
+.moment_content p {
+  font-size: 17px;
+}
+
+
+
+/* ---------切换路由过度动画------------ */
+.loader_ly {
+  z-index: 9999999999999999999;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* 禁止滚动条出现 */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.slider_ly {
+  overflow: hidden;
+  background-color: white;
+  margin: 0 15px;
+  height: 85px;
+  width: 16px;
+  border-radius: 15px;
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1), -15px -15px 30px #fff,
+    inset -5px -5px 10px rgba(0, 0, 255, 0.1),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transform: translateY(-7px);
+}
+
+.slider_ly::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.3), 0px 420px 0 400px #FF6B6B,
+    inset 0px 0px 0px rgba(0, 0, 0, 0.1);
+  animation: dhLy 2s ease-in-out infinite;
+  animation-delay: calc(-1s * var(--i));
+}
+
+@keyframes dhLy {
+  0% {
+    transform: translateY(60px);
+    filter: hue-rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(60px);
+    filter: hue-rotate(360deg);
+  }
+}
+
+/* ---------切换路由过度动画end------------ */
